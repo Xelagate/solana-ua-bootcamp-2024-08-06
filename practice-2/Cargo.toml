@@ -1,17 +1,12 @@
 [package]
-name = "solana_rust_project"
+name = "solana_multisig_token"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-solana-program = "1.18.22"
-solana-sdk = "1.18.22"
-solana-client = "1.18.22"
-mpl-token-metadata = "3.2.3"  # Обновленная версия
-spl-associated-token-account = "1.1.3"
-spl-token = "4.0.0"
-dotenv = "0.15"
-serde_json = "1.0"
-tokio = { version = "1", features = ["full"] }
-borsh = "0.10"
-solana-transaction-status = "1.18.22" # Добавьте эту строку
+solana-program = "1.18.22"  # Убедитесь, что это последняя версия
+solana-sdk = "1.18.22"      # Убедитесь, что это последняя версия
+solana-client = "1.18.22"   # Убедитесь, что это последняя версия
+spl-token = "4.0.0"         # Поддерживает TOKEN_2022_PROGRAM_ID
+spl-associated-token-account = "3.0.4" # Совместимо с новой программой токенов
+anyhow = "1.0"
